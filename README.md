@@ -16,6 +16,8 @@ I developed this repo by following Andrej Karpathy's brilliant [YouTube tutorial
 
 Gradient information is found by maintaining a logical DAG of Value objects and iteratively taking local partial derivatives (which is the heart of backprop). This DAG can be visualized by calling `DAGviz.draw_dot(x)`, for `x` a Value object.
 
+![DAG Visualization Example](DAG_example.svg)
+
 ### `micrograd/nn.py`
 
 `nn.py` builds out a hierarchical **MLP** class by first implementing Neuron and Layer objects.
