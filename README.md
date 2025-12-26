@@ -12,7 +12,7 @@ I developed this repo by following Andrej Karpathy's brilliant [YouTube tutorial
 
 ### `micrograd/engine.py`
 
-`engine.py` defines a **Value** class, which is a wrapper object for scalar values that stores gradient information to efficiently calculate the partial derivative of the loss function with respect to a given Value object in the backward pass.
+`engine.py` defines a **Value** class, which is a wrapper for scalar values that stores gradient information to efficiently calculate the partial derivative of the loss function with respect to a given Value object in the backward pass.
 
 Gradient information is found by maintaining a logical DAG of Value objects and iteratively taking local partial derivatives (which is the heart of backprop). This DAG can be visualized by calling `DAGviz.draw_dot(x)`, for `x` a Value object.
 
